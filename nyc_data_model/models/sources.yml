@@ -1,0 +1,48 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RAW_DB
+    schema: PUBLIC
+    tables:
+      - name: yellow_taxi_trips
+        description: NYC Yellow Taxi trip data loaded from TLC website
+        columns:
+          - name: VENDORID
+            description: ID of the vendor providing the data
+          - name: TPEP_PICKUP_DATETIME
+            description: Date and time when the meter was engaged
+          - name: TPEP_DROPOFF_DATETIME
+            description: Date and time when the meter was disengaged
+          - name: PASSENGER_COUNT
+            description: Number of passengers in the vehicle
+          - name: TRIP_DISTANCE
+            description: Trip distance in miles
+          - name: RATECODEID
+            description: Rate code in effect (1=Standard, 2=JFK, etc.)
+          - name: STORE_AND_FWD_FLAG
+            description: Flag indicating if trip record was stored in vehicle memory before sending to vendor
+          - name: PULOCATIONID
+            description: TLC Taxi Zone where the trip began
+          - name: DOLOCATIONID
+            description: TLC Taxi Zone where the trip ended
+          - name: PAYMENT_TYPE
+            description: Payment method code (1=Credit card, 2=Cash, etc.)
+          - name: FARE_AMOUNT
+            description: Time-and-distance fare calculated by the meter
+          - name: EXTRA
+            description: Miscellaneous extras and surcharges
+          - name: MTA_TAX
+            description: Metropolitan Transportation Authority tax
+          - name: TIP_AMOUNT
+            description: Tip amount (for credit card payments only)
+          - name: TOLLS_AMOUNT
+            description: Total amount of all tolls paid during the trip
+          - name: IMPROVEMENT_SURCHARGE
+            description: Improvement surcharge assessed on hailed trips
+          - name: TOTAL_AMOUNT
+            description: Total amount charged to passengers
+          - name: CONGESTION_SURCHARGE
+            description: Congestion surcharge for trips that start/end/pass through the congestion zone
+          - name: AIRPORT_FEE
+            description: Fee for trips starting at airports
