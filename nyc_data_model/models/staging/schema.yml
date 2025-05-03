@@ -1,7 +1,0 @@
-
-version: 2
-
-models:
-  - name: nytaxi_raw
-    description: "model for the raw data"
-
