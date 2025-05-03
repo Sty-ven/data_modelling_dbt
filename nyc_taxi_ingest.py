@@ -30,13 +30,13 @@ logging.basicConfig(
 logger = logging.getLogger("nyc_taxi_ingest")
 
 # Snowflake connection parameters
-SNOWFLAKE_ACCOUNT = "DXGDUZO-BK44299"
-SNOWFLAKE_USER = "DBT_EXECUTOR"
-SNOWFLAKE_PASSWORD = "STyven@1996"  # Set this via environment variable or enter manually
-SNOWFLAKE_ROLE = "DBT_EXECUTOR_ROLE"
-SNOWFLAKE_WAREHOUSE = "COMPUTE_WH"
-SNOWFLAKE_DATABASE = "RAW_DB"
-SNOWFLAKE_SCHEMA = "PUBLIC"
+SNOWFLAKE_ACCOUNT = os.environ.get("SNOWFLAKE_ACCOUNT", "")
+SNOWFLAKE_USER = os.environ.get("SNOWFLAKE_USER", "")
+SNOWFLAKE_PASSWORD = os.environ.get("SNOWFLAKE_PASSWORD", "")  # Set this via environment variable only
+SNOWFLAKE_ROLE = os.environ.get("SNOWFLAKE_ROLE", "")
+SNOWFLAKE_WAREHOUSE = os.environ.get("SNOWFLAKE_WAREHOUSE", "")
+SNOWFLAKE_DATABASE = os.environ.get("SNOWFLAKE_DATABASE", "RAW_DB")
+SNOWFLAKE_SCHEMA = os.environ.get("SNOWFLAKE_SCHEMA", "PUBLIC")
 
 # Data source parameters
 BASE_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/"
@@ -233,12 +233,23 @@ def process_month(conn, year, month):
 
 def main():
     """Main execution function"""
-    # Check for password
-    global SNOWFLAKE_PASSWORD
-    SNOWFLAKE_PASSWORD = os.environ.get("SNOWFLAKE_PASSWORD", SNOWFLAKE_PASSWORD)
+    # Check for required credentials
+    global SNOWFLAKE_ACCOUNT, SNOWFLAKE_USER, SNOWFLAKE_PASSWORD, SNOWFLAKE_ROLE, SNOWFLAKE_WAREHOUSE
     
+    if not SNOWFLAKE_ACCOUNT:
+        SNOWFLAKE_ACCOUNT = input("Enter your Snowflake account identifier: ")
+    
+    if not SNOWFLAKE_USER:
+        SNOWFLAKE_USER = input("Enter your Snowflake username: ")
+        
     if not SNOWFLAKE_PASSWORD:
         SNOWFLAKE_PASSWORD = input("Enter your Snowflake password: ")
+    
+    if not SNOWFLAKE_ROLE:
+        SNOWFLAKE_ROLE = input("Enter your Snowflake role: ")
+        
+    if not SNOWFLAKE_WAREHOUSE:
+        SNOWFLAKE_WAREHOUSE = input("Enter your Snowflake warehouse: ")
     
     try:
         # Connect to Snowflake
