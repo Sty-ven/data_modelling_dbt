@@ -1,0 +1,1584 @@
+2025-05-03 16:16:12,232 - snowflake.connector.connection - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.13.2, Platform: macOS-15.4.1-arm64-arm-64bit-Mach-O
+2025-05-03 16:16:12,232 - snowflake.connector.connection - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-03 16:16:13,628 - nyc_taxi_ingest - INFO - Successfully connected to Snowflake
+2025-05-03 16:16:13,928 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS is ready
+2025-05-03 16:16:13,929 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+2025-05-03 16:16:13,929 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+2025-05-03 16:16:13,929 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+2025-05-03 16:16:13,930 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+2025-05-03 16:16:14,869 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-01.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp4047dx7n.parquet
+2025-05-03 16:16:14,870 - nyc_taxi_ingest - INFO - Loading data for 2024-01
+2025-05-03 16:16:18,141 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-04.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpnbh1py67.parquet
+2025-05-03 16:16:18,141 - nyc_taxi_ingest - INFO - Loading data for 2024-04
+2025-05-03 16:16:18,246 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-02.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp5hnxd4g8.parquet
+2025-05-03 16:16:18,248 - nyc_taxi_ingest - INFO - Loading data for 2024-02
+2025-05-03 16:16:18,599 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-03.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpsgy6yiq6.parquet
+2025-05-03 16:16:18,599 - nyc_taxi_ingest - INFO - Loading data for 2024-03
+2025-05-03 16:16:23,614 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-01: 000904 (42000): 01bc1a38-0001-e569-0000-0000ccfd637d: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:23,615 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp4047dx7n.parquet
+2025-05-03 16:16:23,620 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+2025-05-03 16:16:26,307 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-05.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpjjm_jnao.parquet
+2025-05-03 16:16:26,310 - nyc_taxi_ingest - INFO - Loading data for 2024-05
+2025-05-03 16:16:27,191 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-04: 000904 (42000): 01bc1a38-0001-e569-0000-0000ccfd6381: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:27,192 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpnbh1py67.parquet
+2025-05-03 16:16:27,198 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+2025-05-03 16:16:27,310 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-02: 000904 (42000): 01bc1a38-0001-e551-0000-0000ccfd7449: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:27,310 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp5hnxd4g8.parquet
+2025-05-03 16:16:27,316 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2025-05-03 16:16:28,101 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-07.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpj_yiwqg5.parquet
+2025-05-03 16:16:28,101 - nyc_taxi_ingest - INFO - Loading data for 2024-07
+2025-05-03 16:16:29,615 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-03: 000904 (42000): 01bc1a38-0001-e56a-0000-0000ccfd5321: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:29,616 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpsgy6yiq6.parquet
+2025-05-03 16:16:29,622 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2025-05-03 16:16:29,777 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-06.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpb3g5ot18.parquet
+2025-05-03 16:16:29,777 - nyc_taxi_ingest - INFO - Loading data for 2024-06
+2025-05-03 16:16:32,311 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-08.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpekxxy50a.parquet
+2025-05-03 16:16:32,311 - nyc_taxi_ingest - INFO - Loading data for 2024-08
+2025-05-03 16:16:35,583 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-07: 000904 (42000): 01bc1a38-0001-e551-0000-0000ccfd7451: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:35,584 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpj_yiwqg5.parquet
+2025-05-03 16:16:35,589 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet
+2025-05-03 16:16:36,151 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-05: 000904 (42000): 01bc1a38-0001-e569-0000-0000ccfd638d: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:36,152 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpjjm_jnao.parquet
+2025-05-03 16:16:36,161 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+2025-05-03 16:16:36,969 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-09.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpm9xw8mtu.parquet
+2025-05-03 16:16:36,969 - nyc_taxi_ingest - INFO - Loading data for 2024-09
+2025-05-03 16:16:37,505 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-10.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpsdczm7bc.parquet
+2025-05-03 16:16:37,505 - nyc_taxi_ingest - INFO - Loading data for 2024-10
+2025-05-03 16:16:38,162 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-06: 000904 (42000): 01bc1a38-0001-e569-0000-0000ccfd6391: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:38,163 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpb3g5ot18.parquet
+2025-05-03 16:16:38,170 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet
+2025-05-03 16:16:38,913 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-11.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvi_67v6v.parquet
+2025-05-03 16:16:38,913 - nyc_taxi_ingest - INFO - Loading data for 2024-11
+2025-05-03 16:16:41,708 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-08: 000904 (42000): 01bc1a38-0001-e5b5-0000-0000ccfda219: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:41,710 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpekxxy50a.parquet
+2025-05-03 16:16:41,716 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet
+2025-05-03 16:16:45,431 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-12.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpcy77wxdi.parquet
+2025-05-03 16:16:45,432 - nyc_taxi_ingest - INFO - Loading data for 2024-12
+2025-05-03 16:16:47,523 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-11: 000904 (42000): 01bc1a38-0001-e569-0000-0000ccfd6399: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:47,525 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvi_67v6v.parquet
+2025-05-03 16:16:48,125 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-10: 000904 (42000): 01bc1a38-0001-e56a-0000-0000ccfd5331: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:48,126 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpsdczm7bc.parquet
+2025-05-03 16:16:50,192 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-09: 000904 (42000): 01bc1a38-0001-e5b5-0000-0000ccfda221: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:50,193 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpm9xw8mtu.parquet
+2025-05-03 16:16:56,047 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-12: 000904 (42000): 01bc1a38-0001-e569-0000-0000ccfd639d: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:16:56,052 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpcy77wxdi.parquet
+2025-05-03 16:16:56,076 - nyc_taxi_ingest - INFO - Completed ingestion of 0 total rows for 2024
+2025-05-03 16:16:56,187 - nyc_taxi_ingest - INFO - Snowflake connection closed
+2025-05-03 16:24:09,583 - snowflake.connector.connection - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.13.2, Platform: macOS-15.4.1-arm64-arm-64bit-Mach-O
+2025-05-03 16:24:09,583 - snowflake.connector.connection - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-03 16:24:10,214 - nyc_taxi_ingest - INFO - Successfully connected to Snowflake
+2025-05-03 16:24:10,352 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS is ready
+2025-05-03 16:24:10,353 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+2025-05-03 16:24:10,353 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+2025-05-03 16:24:10,354 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+2025-05-03 16:24:10,355 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+2025-05-03 16:24:11,567 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-01.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpqtyssfx1.parquet
+2025-05-03 16:24:11,568 - nyc_taxi_ingest - INFO - Loading data for 2024-01
+2025-05-03 16:24:11,994 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-02.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmplpk1h_yh.parquet
+2025-05-03 16:24:11,995 - nyc_taxi_ingest - INFO - Loading data for 2024-02
+2025-05-03 16:24:12,378 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-04.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpud6t2_o3.parquet
+2025-05-03 16:24:12,379 - nyc_taxi_ingest - INFO - Loading data for 2024-04
+2025-05-03 16:24:12,482 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-03.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpralmhidb.parquet
+2025-05-03 16:24:12,483 - nyc_taxi_ingest - INFO - Loading data for 2024-03
+2025-05-03 16:24:19,870 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-02: 000904 (42000): 01bc1a40-0001-e5b5-0000-0000ccfda269: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:19,872 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmplpk1h_yh.parquet
+2025-05-03 16:24:19,880 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+2025-05-03 16:24:20,811 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-05.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp4pjpv1v2.parquet
+2025-05-03 16:24:20,811 - nyc_taxi_ingest - INFO - Loading data for 2024-05
+2025-05-03 16:24:21,859 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-04: 000904 (42000): 01bc1a40-0001-e569-0000-0000ccfd63f1: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:21,860 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpud6t2_o3.parquet
+2025-05-03 16:24:21,866 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+2025-05-03 16:24:23,018 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-06.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp7r5qew6h.parquet
+2025-05-03 16:24:23,018 - nyc_taxi_ingest - INFO - Loading data for 2024-06
+2025-05-03 16:24:23,392 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-01: 000904 (42000): 01bc1a40-0001-e5b5-0000-0000ccfda26d: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:23,392 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpqtyssfx1.parquet
+2025-05-03 16:24:23,397 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2025-05-03 16:24:23,989 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-07.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmthfl68k.parquet
+2025-05-03 16:24:23,989 - nyc_taxi_ingest - INFO - Loading data for 2024-07
+2025-05-03 16:24:24,868 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-03: 000904 (42000): 01bc1a40-0001-e569-0000-0000ccfd63f5: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:24,869 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpralmhidb.parquet
+2025-05-03 16:24:24,876 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2025-05-03 16:24:25,840 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-08.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpjp9l9uj8.parquet
+2025-05-03 16:24:25,840 - nyc_taxi_ingest - INFO - Loading data for 2024-08
+2025-05-03 16:24:31,742 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-07: 000904 (42000): 01bc1a40-0001-e56a-0000-0000ccfd5381: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:31,745 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmthfl68k.parquet
+2025-05-03 16:24:31,753 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet
+2025-05-03 16:24:32,547 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-09.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpko_hvjed.parquet
+2025-05-03 16:24:32,548 - nyc_taxi_ingest - INFO - Loading data for 2024-09
+2025-05-03 16:24:34,611 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-08: 000904 (42000): 01bc1a40-0001-e569-0000-0000ccfd6401: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:34,612 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpjp9l9uj8.parquet
+2025-05-03 16:24:34,617 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+2025-05-03 16:24:35,379 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-10.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp_ehlctgr.parquet
+2025-05-03 16:24:35,379 - nyc_taxi_ingest - INFO - Loading data for 2024-10
+2025-05-03 16:24:35,561 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-05: 000904 (42000): 01bc1a40-0001-e551-0000-0000ccfd74cd: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:35,561 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp4pjpv1v2.parquet
+2025-05-03 16:24:35,569 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet
+2025-05-03 16:24:36,525 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-11.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp7tc5s98d.parquet
+2025-05-03 16:24:36,525 - nyc_taxi_ingest - INFO - Loading data for 2024-11
+2025-05-03 16:24:38,829 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-06: 000904 (42000): 01bc1a40-0001-e569-0000-0000ccfd6405: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:38,829 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp7r5qew6h.parquet
+2025-05-03 16:24:38,835 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet
+2025-05-03 16:24:39,564 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-12.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpd64mnq_6.parquet
+2025-05-03 16:24:39,565 - nyc_taxi_ingest - INFO - Loading data for 2024-12
+2025-05-03 16:24:43,938 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-09: 000904 (42000): 01bc1a40-0001-e551-0000-0000ccfd74d5: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:43,938 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpko_hvjed.parquet
+2025-05-03 16:24:44,972 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-11: 000904 (42000): 01bc1a40-0001-e569-0000-0000ccfd6409: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:44,973 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp7tc5s98d.parquet
+2025-05-03 16:24:48,025 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-12: 000904 (42000): 01bc1a40-0001-e551-0000-0000ccfd74d9: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:48,027 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpd64mnq_6.parquet
+2025-05-03 16:24:48,454 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-10: 000904 (42000): 01bc1a40-0001-e569-0000-0000ccfd640d: SQL compilation error: error line 1 at position 86
+invalid identifier '"VendorID"'
+2025-05-03 16:24:48,457 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp_ehlctgr.parquet
+2025-05-03 16:24:48,584 - nyc_taxi_ingest - INFO - Snowflake connection closed
+2025-05-03 16:26:32,510 - snowflake.connector.connection - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.13.2, Platform: macOS-15.4.1-arm64-arm-64bit-Mach-O
+2025-05-03 16:26:32,510 - snowflake.connector.connection - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-03 16:26:33,079 - nyc_taxi_ingest - INFO - Successfully connected to Snowflake
+2025-05-03 16:26:33,202 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS already exists
+2025-05-03 16:26:33,202 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+2025-05-03 16:26:33,202 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+2025-05-03 16:26:33,203 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+2025-05-03 16:26:33,203 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+2025-05-03 16:26:34,815 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-01.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpxkryh0tx.parquet
+2025-05-03 16:26:34,816 - nyc_taxi_ingest - INFO - Loading data for 2024-01
+2025-05-03 16:26:34,936 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-03.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp01wdjwz2.parquet
+2025-05-03 16:26:34,936 - nyc_taxi_ingest - INFO - Loading data for 2024-03
+2025-05-03 16:26:35,132 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-02.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpwaw1h65_.parquet
+2025-05-03 16:26:35,132 - nyc_taxi_ingest - INFO - Loading data for 2024-02
+2025-05-03 16:26:35,231 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-04.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvtnekxoi.parquet
+2025-05-03 16:26:35,231 - nyc_taxi_ingest - INFO - Loading data for 2024-04
+2025-05-03 16:26:45,367 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-01: 002023 (22000): 01bc1a42-0001-e551-0000-0000ccfd74e9: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:26:45,370 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpxkryh0tx.parquet
+2025-05-03 16:26:45,383 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+2025-05-03 16:26:46,160 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-05.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpy8_2o_w8.parquet
+2025-05-03 16:26:46,161 - nyc_taxi_ingest - INFO - Loading data for 2024-05
+2025-05-03 16:26:46,352 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-02: 002023 (22000): 01bc1a42-0001-e569-0000-0000ccfd6421: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:26:46,408 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpwaw1h65_.parquet
+2025-05-03 16:26:46,419 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+2025-05-03 16:26:47,081 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-06.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpbqtcs8q5.parquet
+2025-05-03 16:26:47,081 - nyc_taxi_ingest - INFO - Loading data for 2024-06
+2025-05-03 16:26:47,622 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-03: 002023 (22000): 01bc1a42-0001-e569-0000-0000ccfd6425: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:26:47,626 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp01wdjwz2.parquet
+2025-05-03 16:26:47,631 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2025-05-03 16:26:48,122 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-04: 002023 (22000): 01bc1a42-0001-e569-0000-0000ccfd6429: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:26:48,123 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvtnekxoi.parquet
+2025-05-03 16:26:48,132 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2025-05-03 16:26:48,184 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-07.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpygrzi9xg.parquet
+2025-05-03 16:26:48,184 - nyc_taxi_ingest - INFO - Loading data for 2024-07
+2025-05-03 16:26:48,749 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-08.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpv2t_sp60.parquet
+2025-05-03 16:26:48,749 - nyc_taxi_ingest - INFO - Loading data for 2024-08
+2025-05-03 16:26:57,124 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-06: 002023 (22000): 01bc1a42-0001-e551-0000-0000ccfd74fd: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:26:57,128 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpbqtcs8q5.parquet
+2025-05-03 16:26:57,151 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet
+2025-05-03 16:26:57,864 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-09.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmhl_tx09.parquet
+2025-05-03 16:26:57,864 - nyc_taxi_ingest - INFO - Loading data for 2024-09
+2025-05-03 16:26:58,277 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-07: 002023 (22000): 01bc1a42-0001-e551-0000-0000ccfd7501: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:26:58,280 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpygrzi9xg.parquet
+2025-05-03 16:26:58,287 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+2025-05-03 16:26:59,010 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-10.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvh1mfiuj.parquet
+2025-05-03 16:26:59,011 - nyc_taxi_ingest - INFO - Loading data for 2024-10
+2025-05-03 16:27:01,044 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-08: 002023 (22000): 01bc1a43-0001-e569-0000-0000ccfd6441: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:27:01,044 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpv2t_sp60.parquet
+2025-05-03 16:27:01,051 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet
+2025-05-03 16:27:01,689 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-11.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpipf87t9i.parquet
+2025-05-03 16:27:01,689 - nyc_taxi_ingest - INFO - Loading data for 2024-11
+2025-05-03 16:27:02,139 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-05: 002023 (22000): 01bc1a43-0001-e5b5-0000-0000ccfda2c5: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:27:02,140 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpy8_2o_w8.parquet
+2025-05-03 16:27:02,148 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet
+2025-05-03 16:27:02,927 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-12.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpy704dtke.parquet
+2025-05-03 16:27:02,928 - nyc_taxi_ingest - INFO - Loading data for 2024-12
+2025-05-03 16:27:08,915 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-09: 002023 (22000): 01bc1a43-0001-e551-0000-0000ccfd7515: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:27:08,917 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmhl_tx09.parquet
+2025-05-03 16:27:11,128 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-10: 002023 (22000): 01bc1a43-0001-e569-0000-0000ccfd6451: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:27:11,133 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvh1mfiuj.parquet
+2025-05-03 16:27:11,940 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-11: 002023 (22000): 01bc1a43-0001-e5b5-0000-0000ccfda2d9: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:27:11,946 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpipf87t9i.parquet
+2025-05-03 16:27:13,274 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-12: 002023 (22000): 01bc1a43-0001-e5b5-0000-0000ccfda2dd: SQL compilation error:
+Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got NUMBER(38,0) for column TPEP_PICKUP_DATETIME
+2025-05-03 16:27:13,279 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpy704dtke.parquet
+2025-05-03 16:27:13,303 - nyc_taxi_ingest - INFO - Completed ingestion of 0 total rows for 2024
+2025-05-03 16:27:13,414 - nyc_taxi_ingest - INFO - Snowflake connection closed
+2025-05-03 16:28:31,281 - snowflake.connector.connection - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.13.2, Platform: macOS-15.4.1-arm64-arm-64bit-Mach-O
+2025-05-03 16:28:31,281 - snowflake.connector.connection - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-03 16:28:31,797 - nyc_taxi_ingest - INFO - Successfully connected to Snowflake
+2025-05-03 16:28:31,959 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS already exists, dropping it for clean import
+2025-05-03 16:28:32,074 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS dropped successfully
+2025-05-03 16:28:32,075 - nyc_taxi_ingest - INFO - Starting sequential processing of months
+2025-05-03 16:28:32,075 - nyc_taxi_ingest - INFO - Processing first month 2024-01 to create table schema
+2025-05-03 16:28:32,075 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+2025-05-03 16:28:32,671 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-01.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp6k8l8x3b.parquet
+2025-05-03 16:28:32,671 - nyc_taxi_ingest - INFO - Loading data for 2024-01
+2025-05-03 16:28:32,798 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:28:32,984 - nyc_taxi_ingest - INFO - Created table YELLOW_TAXI_TRIPS with specific column types
+2025-05-03 16:28:40,964 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-01: 100071 (22000): 01bc1a44-0001-e569-0000-0000ccfd6461: Failed to cast variant value 1704067200000000000 to DATE
+2025-05-03 16:28:40,968 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp6k8l8x3b.parquet
+2025-05-03 16:28:40,977 - nyc_taxi_ingest - INFO - Processed first month with 0 rows
+2025-05-03 16:28:40,978 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+2025-05-03 16:28:40,978 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+2025-05-03 16:28:40,978 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+2025-05-03 16:28:40,979 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+2025-05-03 16:28:42,778 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-03.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp57vbpo2b.parquet
+2025-05-03 16:28:42,778 - nyc_taxi_ingest - INFO - Loading data for 2024-03
+2025-05-03 16:28:42,807 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-02.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmprg82c8_x.parquet
+2025-05-03 16:28:42,813 - nyc_taxi_ingest - INFO - Loading data for 2024-02
+2025-05-03 16:28:42,933 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-04.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmppz4fdmdo.parquet
+2025-05-03 16:28:42,934 - nyc_taxi_ingest - INFO - Loading data for 2024-04
+2025-05-03 16:28:42,945 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:28:42,976 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:28:43,051 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:28:43,065 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-05.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmk3vk92_.parquet
+2025-05-03 16:28:43,065 - nyc_taxi_ingest - INFO - Loading data for 2024-05
+2025-05-03 16:28:43,210 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:28:52,657 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-02: 100071 (22000): 01bc1a44-0001-e5b5-0000-0000ccfda2f1: Failed to cast variant value 1706745600000000000 to DATE
+2025-05-03 16:28:52,661 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmprg82c8_x.parquet
+2025-05-03 16:28:52,681 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+2025-05-03 16:28:52,924 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-03: 100071 (22000): 01bc1a44-0001-e5b5-0000-0000ccfda2f5: Failed to cast variant value 1709251200000000000 to DATE
+2025-05-03 16:28:52,928 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp57vbpo2b.parquet
+2025-05-03 16:28:52,947 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2025-05-03 16:28:53,457 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-06.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp9p4lmddy.parquet
+2025-05-03 16:28:53,457 - nyc_taxi_ingest - INFO - Loading data for 2024-06
+2025-05-03 16:28:53,553 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:28:53,872 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-07.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpqiym3os4.parquet
+2025-05-03 16:28:53,872 - nyc_taxi_ingest - INFO - Loading data for 2024-07
+2025-05-03 16:28:53,958 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:29:01,303 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-05: 100071 (22000): 01bc1a45-0001-e5b5-0000-0000ccfda2fd: Failed to cast variant value 1714521600000000000 to DATE
+2025-05-03 16:29:01,305 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmk3vk92_.parquet
+2025-05-03 16:29:01,329 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2025-05-03 16:29:01,656 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-04: 100071 (22000): 01bc1a45-0001-e551-0000-0000ccfd7535: Failed to cast variant value 1711929600000000000 to DATE
+2025-05-03 16:29:01,656 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmppz4fdmdo.parquet
+2025-05-03 16:29:01,673 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet
+2025-05-03 16:29:02,216 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-07: 100071 (22000): 01bc1a45-0001-e5b5-0000-0000ccfda301: Failed to cast variant value 1719792000000000000 to DATE
+2025-05-03 16:29:02,218 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpqiym3os4.parquet
+2025-05-03 16:29:02,234 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+2025-05-03 16:29:02,242 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-08.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp_7d3vafj.parquet
+2025-05-03 16:29:02,242 - nyc_taxi_ingest - INFO - Loading data for 2024-08
+2025-05-03 16:29:02,335 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:29:02,693 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-09.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpwksara1l.parquet
+2025-05-03 16:29:02,694 - nyc_taxi_ingest - INFO - Loading data for 2024-09
+2025-05-03 16:29:02,784 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:29:03,214 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-10.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpaq97se6l.parquet
+2025-05-03 16:29:03,214 - nyc_taxi_ingest - INFO - Loading data for 2024-10
+2025-05-03 16:29:03,335 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:29:07,365 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-06: 100071 (22000): 01bc1a45-0001-e5b5-0000-0000ccfda305: Failed to cast variant value 1717200000000000000 to DATE
+2025-05-03 16:29:07,365 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp9p4lmddy.parquet
+2025-05-03 16:29:07,373 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet
+2025-05-03 16:29:08,057 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-11.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmppxx0pzah.parquet
+2025-05-03 16:29:08,057 - nyc_taxi_ingest - INFO - Loading data for 2024-11
+2025-05-03 16:29:08,153 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:29:12,569 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-09: 100071 (22000): 01bc1a45-0001-e56a-0000-0000ccfd53d9: Failed to cast variant value 1725148800000000000 to DATE
+2025-05-03 16:29:12,570 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpwksara1l.parquet
+2025-05-03 16:29:12,579 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet
+2025-05-03 16:29:13,317 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-12.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpn69vuvcf.parquet
+2025-05-03 16:29:13,317 - nyc_taxi_ingest - INFO - Loading data for 2024-12
+2025-05-03 16:29:13,402 - nyc_taxi_ingest - INFO - DataFrame datatypes before upload:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:29:14,034 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-08: 100071 (22000): 01bc1a45-0001-e5b5-0000-0000ccfda30d: Failed to cast variant value 1722470400000000000 to DATE
+2025-05-03 16:29:14,034 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp_7d3vafj.parquet
+2025-05-03 16:29:15,521 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-10: 100071 (22000): 01bc1a45-0001-e551-0000-0000ccfd7545: Failed to cast variant value 1727740800000000000 to DATE
+2025-05-03 16:29:15,522 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpaq97se6l.parquet
+2025-05-03 16:29:19,742 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-11: 100071 (22000): 01bc1a45-0001-e569-0000-0000ccfd6481: Failed to cast variant value 1730419200000000000 to DATE
+2025-05-03 16:29:19,746 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmppxx0pzah.parquet
+2025-05-03 16:29:23,813 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-12: 100071 (22000): 01bc1a45-0001-e5b5-0000-0000ccfda315: Failed to cast variant value 1733011200000000000 to DATE
+2025-05-03 16:29:23,817 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpn69vuvcf.parquet
+2025-05-03 16:29:23,844 - nyc_taxi_ingest - INFO - Completed ingestion of 0 total rows for 2024
+2025-05-03 16:29:23,958 - nyc_taxi_ingest - INFO - Snowflake connection closed
+2025-05-03 16:30:45,717 - snowflake.connector.connection - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.13.2, Platform: macOS-15.4.1-arm64-arm-64bit-Mach-O
+2025-05-03 16:30:45,717 - snowflake.connector.connection - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-03 16:30:46,498 - nyc_taxi_ingest - INFO - Successfully connected to Snowflake
+2025-05-03 16:30:46,627 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS already exists, dropping it for clean import
+2025-05-03 16:30:46,749 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS dropped successfully
+2025-05-03 16:30:46,749 - nyc_taxi_ingest - INFO - Starting sequential processing of months
+2025-05-03 16:30:46,750 - nyc_taxi_ingest - INFO - Processing first month 2024-01 to create table schema
+2025-05-03 16:30:46,750 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+2025-05-03 16:30:47,333 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-01.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp2bxsqc9t.parquet
+2025-05-03 16:30:47,334 - nyc_taxi_ingest - INFO - Loading data for 2024-01
+2025-05-03 16:30:47,438 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-01-01 00:57:55 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:47,450 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:47,670 - nyc_taxi_ingest - INFO - Created table YELLOW_TAXI_TRIPS with specific column types
+2025-05-03 16:30:47,795 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-01: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:47,802 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp2bxsqc9t.parquet
+2025-05-03 16:30:47,828 - nyc_taxi_ingest - INFO - Processed first month with 0 rows
+2025-05-03 16:30:47,829 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+2025-05-03 16:30:47,829 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+2025-05-03 16:30:47,829 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+2025-05-03 16:30:47,829 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+2025-05-03 16:30:49,556 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-02.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp67xprdy6.parquet
+2025-05-03 16:30:49,557 - nyc_taxi_ingest - INFO - Loading data for 2024-02
+2025-05-03 16:30:49,638 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-02-01 00:04:45 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:49,651 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:49,737 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-05.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpaomd16ne.parquet
+2025-05-03 16:30:49,738 - nyc_taxi_ingest - INFO - Loading data for 2024-05
+2025-05-03 16:30:49,739 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-04.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp4vsghmvm.parquet
+2025-05-03 16:30:49,739 - nyc_taxi_ingest - INFO - Loading data for 2024-04
+2025-05-03 16:30:49,875 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-04-01 00:02:40 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:49,875 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-05-01 00:59:15 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:49,883 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-02: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:49,888 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:49,888 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp67xprdy6.parquet
+2025-05-03 16:30:49,914 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:49,914 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+2025-05-03 16:30:49,928 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-03.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp0plfnpfd.parquet
+2025-05-03 16:30:49,928 - nyc_taxi_ingest - INFO - Loading data for 2024-03
+2025-05-03 16:30:49,993 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-03-01 00:18:51 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:50,004 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:50,021 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-04: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:50,024 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp4vsghmvm.parquet
+2025-05-03 16:30:50,037 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2025-05-03 16:30:50,206 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-05: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:50,208 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpaomd16ne.parquet
+2025-05-03 16:30:50,226 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2025-05-03 16:30:50,251 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-03: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:50,253 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp0plfnpfd.parquet
+2025-05-03 16:30:50,272 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet
+2025-05-03 16:30:50,793 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-06.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpg0mblhv7.parquet
+2025-05-03 16:30:50,794 - nyc_taxi_ingest - INFO - Loading data for 2024-06
+2025-05-03 16:30:50,880 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-06-01 00:03:46 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:50,895 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:51,195 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-06: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:51,196 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpg0mblhv7.parquet
+2025-05-03 16:30:51,213 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+2025-05-03 16:30:51,523 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-08.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpzwr1zz8t.parquet
+2025-05-03 16:30:51,524 - nyc_taxi_ingest - INFO - Loading data for 2024-08
+2025-05-03 16:30:51,595 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-08-01 00:21:00 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:51,605 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:51,760 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-08: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:51,762 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpzwr1zz8t.parquet
+2025-05-03 16:30:51,776 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet
+2025-05-03 16:30:51,780 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-07.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpf40hbk73.parquet
+2025-05-03 16:30:51,781 - nyc_taxi_ingest - INFO - Loading data for 2024-07
+2025-05-03 16:30:51,856 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-07-01 00:34:56 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:51,867 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:51,999 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-07: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:52,001 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpf40hbk73.parquet
+2025-05-03 16:30:52,014 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet
+2025-05-03 16:30:52,392 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-09.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpwtlqumnx.parquet
+2025-05-03 16:30:52,393 - nyc_taxi_ingest - INFO - Loading data for 2024-09
+2025-05-03 16:30:52,479 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-09-01 00:05:51 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:52,492 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:52,664 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-09: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:52,666 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpwtlqumnx.parquet
+2025-05-03 16:30:52,690 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-10.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp75jrm_c1.parquet
+2025-05-03 16:30:52,691 - nyc_taxi_ingest - INFO - Loading data for 2024-10
+2025-05-03 16:30:52,773 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-10-01 00:30:44 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:52,787 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:52,908 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-10: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:52,910 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp75jrm_c1.parquet
+2025-05-03 16:30:53,060 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-11.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp8a8c5_jt.parquet
+2025-05-03 16:30:53,061 - nyc_taxi_ingest - INFO - Loading data for 2024-11
+2025-05-03 16:30:53,134 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-11-01 00:46:24 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:53,143 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:53,259 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-11: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:53,261 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp8a8c5_jt.parquet
+2025-05-03 16:30:54,014 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-12.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpl9ovqjw_.parquet
+2025-05-03 16:30:54,015 - nyc_taxi_ingest - INFO - Loading data for 2024-12
+2025-05-03 16:30:54,092 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-12-01 00:12:27 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:30:54,100 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:30:54,228 - nyc_taxi_ingest - ERROR - Failed to load data for 2024-12: __cinit__() got an unexpected keyword argument 'date_format'
+2025-05-03 16:30:54,230 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpl9ovqjw_.parquet
+2025-05-03 16:30:54,248 - nyc_taxi_ingest - INFO - Completed ingestion of 0 total rows for 2024
+2025-05-03 16:30:54,346 - nyc_taxi_ingest - INFO - Snowflake connection closed
+2025-05-03 16:32:47,429 - snowflake.connector.connection - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.13.2, Platform: macOS-15.4.1-arm64-arm-64bit-Mach-O
+2025-05-03 16:32:47,429 - snowflake.connector.connection - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-03 16:32:47,989 - nyc_taxi_ingest - INFO - Successfully connected to Snowflake
+2025-05-03 16:32:48,142 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS already exists, dropping it for clean import
+2025-05-03 16:32:48,350 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS dropped successfully
+2025-05-03 16:32:48,351 - nyc_taxi_ingest - INFO - Starting sequential processing of months
+2025-05-03 16:32:48,351 - nyc_taxi_ingest - INFO - Processing first month 2024-01 to create table schema
+2025-05-03 16:32:48,351 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+2025-05-03 16:32:48,950 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-01.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp6646epba.parquet
+2025-05-03 16:32:48,952 - nyc_taxi_ingest - INFO - Loading data for 2024-01
+2025-05-03 16:32:49,048 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-01-01 00:57:55 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:32:49,059 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:32:49,235 - nyc_taxi_ingest - INFO - Created table YELLOW_TAXI_TRIPS with specific column types
+2025-05-03 16:34:45,352 - nyc_taxi_ingest - INFO - Loaded 2964624 rows for 2024-01 in 297 chunks
+2025-05-03 16:34:45,356 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp6646epba.parquet
+2025-05-03 16:34:45,380 - nyc_taxi_ingest - INFO - Processed first month with 2964624 rows
+2025-05-03 16:34:45,380 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+2025-05-03 16:34:45,381 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+2025-05-03 16:34:45,381 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+2025-05-03 16:34:45,382 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+2025-05-03 16:34:47,176 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-05.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpxyp4lrlk.parquet
+2025-05-03 16:34:47,177 - nyc_taxi_ingest - INFO - Loading data for 2024-05
+2025-05-03 16:34:47,275 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-03.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpjjpqqrt3.parquet
+2025-05-03 16:34:47,276 - nyc_taxi_ingest - INFO - Loading data for 2024-03
+2025-05-03 16:34:47,280 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-05-01 00:59:15 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:34:47,313 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:34:47,377 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-03-01 00:18:51 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:34:47,383 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-02.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpfwvu9gg9.parquet
+2025-05-03 16:34:47,384 - nyc_taxi_ingest - INFO - Loading data for 2024-02
+2025-05-03 16:34:47,396 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:34:47,458 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-02-01 00:04:45 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:34:47,485 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:34:47,545 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-04.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmepaluwf.parquet
+2025-05-03 16:34:47,546 - nyc_taxi_ingest - INFO - Loading data for 2024-04
+2025-05-03 16:34:47,638 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-04-01 00:02:40 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:34:47,654 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:36:45,699 - nyc_taxi_ingest - INFO - Loaded 3007526 rows for 2024-02 in 301 chunks
+2025-05-03 16:36:45,699 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpfwvu9gg9.parquet
+2025-05-03 16:36:45,717 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+2025-05-03 16:36:46,491 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-06.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvn7bv49b.parquet
+2025-05-03 16:36:46,491 - nyc_taxi_ingest - INFO - Loading data for 2024-06
+2025-05-03 16:36:46,672 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-06-01 00:03:46 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:36:46,692 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:37:05,950 - nyc_taxi_ingest - INFO - Loaded 3514289 rows for 2024-04 in 352 chunks
+2025-05-03 16:37:05,951 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmepaluwf.parquet
+2025-05-03 16:37:05,981 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2025-05-03 16:37:06,568 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-07.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp8k_tliz0.parquet
+2025-05-03 16:37:06,569 - nyc_taxi_ingest - INFO - Loading data for 2024-07
+2025-05-03 16:37:06,651 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-07-01 00:34:56 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:37:06,662 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:37:10,289 - nyc_taxi_ingest - INFO - Loaded 3582628 rows for 2024-03 in 359 chunks
+2025-05-03 16:37:10,291 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpjjpqqrt3.parquet
+2025-05-03 16:37:10,322 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2025-05-03 16:37:10,959 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-08.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpkm3l5m1l.parquet
+2025-05-03 16:37:10,959 - nyc_taxi_ingest - INFO - Loading data for 2024-08
+2025-05-03 16:37:11,039 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-08-01 00:21:00 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:37:11,050 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:37:13,923 - nyc_taxi_ingest - INFO - Loaded 3723833 rows for 2024-05 in 373 chunks
+2025-05-03 16:37:13,923 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpxyp4lrlk.parquet
+2025-05-03 16:37:13,944 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet
+2025-05-03 16:37:14,659 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-09.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmps2bf20n1.parquet
+2025-05-03 16:37:14,660 - nyc_taxi_ingest - INFO - Loading data for 2024-09
+2025-05-03 16:37:14,738 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-09-01 00:05:51 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:37:14,750 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:39:13,029 - nyc_taxi_ingest - INFO - Loaded 3076903 rows for 2024-07 in 308 chunks
+2025-05-03 16:39:13,031 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp8k_tliz0.parquet
+2025-05-03 16:39:13,057 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+2025-05-03 16:39:13,085 - nyc_taxi_ingest - INFO - Loaded 2979183 rows for 2024-08 in 298 chunks
+2025-05-03 16:39:13,085 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpkm3l5m1l.parquet
+2025-05-03 16:39:13,106 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet
+2025-05-03 16:39:13,475 - nyc_taxi_ingest - INFO - Loaded 3539193 rows for 2024-06 in 354 chunks
+2025-05-03 16:39:13,476 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpvn7bv49b.parquet
+2025-05-03 16:39:13,497 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet
+2025-05-03 16:39:14,082 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-10.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpzi4i__at.parquet
+2025-05-03 16:39:14,083 - nyc_taxi_ingest - INFO - Loading data for 2024-10
+2025-05-03 16:39:14,179 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-10-01 00:30:44 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:39:14,194 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:39:14,539 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-11.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpg9n4ey5q.parquet
+2025-05-03 16:39:14,540 - nyc_taxi_ingest - INFO - Loading data for 2024-11
+2025-05-03 16:39:14,639 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-11-01 00:46:24 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:39:14,654 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:39:14,829 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-12.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpk0d65vmd.parquet
+2025-05-03 16:39:14,830 - nyc_taxi_ingest - INFO - Loading data for 2024-12
+2025-05-03 16:39:14,979 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-12-01 00:12:27 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:39:15,003 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                          int32
+tpep_pickup_datetime     datetime64[us]
+tpep_dropoff_datetime    datetime64[us]
+passenger_count                 float64
+trip_distance                   float64
+RatecodeID                      float64
+store_and_fwd_flag               object
+PULocationID                      int32
+DOLocationID                      int32
+payment_type                      int64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+improvement_surcharge           float64
+total_amount                    float64
+congestion_surcharge            float64
+Airport_fee                     float64
+dtype: object
+2025-05-03 16:39:37,188 - nyc_taxi_ingest - INFO - Loaded 3633030 rows for 2024-09 in 364 chunks
+2025-05-03 16:39:37,188 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmps2bf20n1.parquet
+2025-05-03 16:41:47,006 - nyc_taxi_ingest - INFO - Loaded 3646369 rows for 2024-11 in 365 chunks
+2025-05-03 16:41:47,008 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpg9n4ey5q.parquet
+2025-05-03 16:41:47,042 - nyc_taxi_ingest - INFO - Loaded 3668371 rows for 2024-12 in 367 chunks
+2025-05-03 16:41:47,043 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpk0d65vmd.parquet
+2025-05-03 16:41:50,306 - nyc_taxi_ingest - INFO - Loaded 3833771 rows for 2024-10 in 384 chunks
+2025-05-03 16:41:50,307 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpzi4i__at.parquet
+2025-05-03 16:41:50,456 - nyc_taxi_ingest - INFO - Snowflake connection closed
+2025-05-03 16:44:59,791 - snowflake.connector.connection - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.13.2, Platform: macOS-15.4.1-arm64-arm-64bit-Mach-O
+2025-05-03 16:44:59,792 - snowflake.connector.connection - INFO - Connecting to GLOBAL Snowflake domain
+2025-05-03 16:45:00,454 - nyc_taxi_ingest - INFO - Successfully connected to Snowflake
+2025-05-03 16:45:00,604 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS already exists, dropping it for clean import
+2025-05-03 16:45:00,712 - nyc_taxi_ingest - INFO - Table YELLOW_TAXI_TRIPS dropped successfully
+2025-05-03 16:45:00,712 - nyc_taxi_ingest - INFO - Starting sequential processing of months
+2025-05-03 16:45:00,712 - nyc_taxi_ingest - INFO - Processing first month 2024-01 to create table schema
+2025-05-03 16:45:00,713 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet
+2025-05-03 16:45:01,302 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-01.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpdywsx1xu.parquet
+2025-05-03 16:45:01,303 - nyc_taxi_ingest - INFO - Loading data for 2024-01
+2025-05-03 16:45:01,404 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-01-01 00:57:55 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:45:02,848 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-01-01 00:57:55 (type: <class 'str'>)
+2025-05-03 16:45:04,352 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-01-01 01:17:43 (type: <class 'str'>)
+2025-05-03 16:45:04,354 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:45:04,559 - nyc_taxi_ingest - INFO - Created table YELLOW_TAXI_TRIPS with specific column types
+2025-05-03 16:47:00,875 - nyc_taxi_ingest - INFO - Loaded 2964624 rows for 2024-01 in 297 chunks
+2025-05-03 16:47:00,878 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpdywsx1xu.parquet
+2025-05-03 16:47:00,947 - nyc_taxi_ingest - INFO - Processed first month with 2964624 rows
+2025-05-03 16:47:00,947 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet
+2025-05-03 16:47:00,947 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet
+2025-05-03 16:47:00,947 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet
+2025-05-03 16:47:00,948 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet
+2025-05-03 16:47:02,278 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-02.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmum030wm.parquet
+2025-05-03 16:47:02,279 - nyc_taxi_ingest - INFO - Loading data for 2024-02
+2025-05-03 16:47:02,352 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-02-01 00:04:45 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:47:03,981 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-02-01 00:04:45 (type: <class 'str'>)
+2025-05-03 16:47:05,576 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-02-01 00:19:58 (type: <class 'str'>)
+2025-05-03 16:47:05,576 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:47:05,707 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-03.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpu5tssaer.parquet
+2025-05-03 16:47:05,707 - nyc_taxi_ingest - INFO - Loading data for 2024-03
+2025-05-03 16:47:05,778 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-03-01 00:18:51 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:47:07,599 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-03-01 00:18:51 (type: <class 'str'>)
+2025-05-03 16:47:09,522 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-03-01 00:23:45 (type: <class 'str'>)
+2025-05-03 16:47:09,522 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:47:09,663 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-04.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp50yhfpst.parquet
+2025-05-03 16:47:09,664 - nyc_taxi_ingest - INFO - Loading data for 2024-04
+2025-05-03 16:47:09,735 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-04-01 00:02:40 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:47:11,511 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-04-01 00:02:40 (type: <class 'str'>)
+2025-05-03 16:47:13,205 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-04-01 00:30:42 (type: <class 'str'>)
+2025-05-03 16:47:13,206 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:47:13,685 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-05.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpkl_o41sw.parquet
+2025-05-03 16:47:13,686 - nyc_taxi_ingest - INFO - Loading data for 2024-05
+2025-05-03 16:47:13,768 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-05-01 00:59:15 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:47:15,611 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-05-01 00:59:15 (type: <class 'str'>)
+2025-05-03 16:47:17,485 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-05-01 01:23:50 (type: <class 'str'>)
+2025-05-03 16:47:17,485 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:49:14,250 - nyc_taxi_ingest - INFO - Loaded 3007526 rows for 2024-02 in 301 chunks
+2025-05-03 16:49:14,252 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpmum030wm.parquet
+2025-05-03 16:49:14,324 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet
+2025-05-03 16:49:15,806 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-06.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp8z9qhijs.parquet
+2025-05-03 16:49:15,806 - nyc_taxi_ingest - INFO - Loading data for 2024-06
+2025-05-03 16:49:15,891 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-06-01 00:03:46 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:49:17,702 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-06-01 00:03:46 (type: <class 'str'>)
+2025-05-03 16:49:19,504 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-06-01 00:31:23 (type: <class 'str'>)
+2025-05-03 16:49:19,504 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:49:42,451 - nyc_taxi_ingest - INFO - Loaded 3514289 rows for 2024-04 in 352 chunks
+2025-05-03 16:49:42,452 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp50yhfpst.parquet
+2025-05-03 16:49:42,539 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2025-05-03 16:49:43,255 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-07.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp3jpjnj09.parquet
+2025-05-03 16:49:43,255 - nyc_taxi_ingest - INFO - Loading data for 2024-07
+2025-05-03 16:49:43,306 - nyc_taxi_ingest - INFO - Loaded 3582628 rows for 2024-03 in 359 chunks
+2025-05-03 16:49:43,331 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpu5tssaer.parquet
+2025-05-03 16:49:43,332 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-07-01 00:34:56 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:49:43,406 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2025-05-03 16:49:44,933 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-07-01 00:34:56 (type: <class 'str'>)
+2025-05-03 16:49:46,467 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-07-01 00:46:49 (type: <class 'str'>)
+2025-05-03 16:49:46,467 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:49:48,558 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-08.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpsm74nrg7.parquet
+2025-05-03 16:49:48,558 - nyc_taxi_ingest - INFO - Loading data for 2024-08
+2025-05-03 16:49:48,635 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-08-01 00:21:00 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:49:50,126 - nyc_taxi_ingest - INFO - Loaded 3723833 rows for 2024-05 in 373 chunks
+2025-05-03 16:49:50,140 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpkl_o41sw.parquet
+2025-05-03 16:49:50,204 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet
+2025-05-03 16:49:50,216 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-08-01 00:21:00 (type: <class 'str'>)
+2025-05-03 16:49:51,699 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-08-01 00:36:13 (type: <class 'str'>)
+2025-05-03 16:49:51,700 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:49:52,449 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-09.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp0rj10zjj.parquet
+2025-05-03 16:49:52,450 - nyc_taxi_ingest - INFO - Loading data for 2024-09
+2025-05-03 16:49:52,539 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-09-01 00:05:51 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:49:54,425 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-09-01 00:05:51 (type: <class 'str'>)
+2025-05-03 16:49:56,314 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-09-01 00:45:03 (type: <class 'str'>)
+2025-05-03 16:49:56,315 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:51:47,348 - nyc_taxi_ingest - INFO - Loaded 3539193 rows for 2024-06 in 354 chunks
+2025-05-03 16:51:47,348 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp8z9qhijs.parquet
+2025-05-03 16:51:47,419 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet
+2025-05-03 16:51:48,177 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-10.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpedddrxeg.parquet
+2025-05-03 16:51:48,178 - nyc_taxi_ingest - INFO - Loading data for 2024-10
+2025-05-03 16:51:48,256 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-10-01 00:30:44 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:51:50,316 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-10-01 00:30:44 (type: <class 'str'>)
+2025-05-03 16:51:52,193 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-10-01 00:48:26 (type: <class 'str'>)
+2025-05-03 16:51:52,193 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:51:53,946 - nyc_taxi_ingest - INFO - Loaded 3076903 rows for 2024-07 in 308 chunks
+2025-05-03 16:51:53,947 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp3jpjnj09.parquet
+2025-05-03 16:51:54,020 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet
+2025-05-03 16:51:54,761 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-11.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp9s7vxfuq.parquet
+2025-05-03 16:51:54,761 - nyc_taxi_ingest - INFO - Loading data for 2024-11
+2025-05-03 16:51:54,849 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-11-01 00:46:24 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:51:56,568 - nyc_taxi_ingest - INFO - Loaded 2979183 rows for 2024-08 in 298 chunks
+2025-05-03 16:51:56,568 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpsm74nrg7.parquet
+2025-05-03 16:51:56,644 - nyc_taxi_ingest - INFO - Downloading https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet
+2025-05-03 16:51:56,666 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-11-01 00:46:24 (type: <class 'str'>)
+2025-05-03 16:51:58,495 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-11-01 00:57:17 (type: <class 'str'>)
+2025-05-03 16:51:58,496 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:51:59,176 - nyc_taxi_ingest - INFO - Downloaded yellow_tripdata_2024-12.parquet to /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpnc_ugnkv.parquet
+2025-05-03 16:51:59,179 - nyc_taxi_ingest - INFO - Loading data for 2024-12
+2025-05-03 16:51:59,320 - nyc_taxi_ingest - INFO - Sample timestamp value before conversion: 2024-12-01 00:12:27 (type: <class 'pandas._libs.tslibs.timestamps.Timestamp'>)
+2025-05-03 16:52:01,197 - nyc_taxi_ingest - INFO - Converted tpep_pickup_datetime to string format: 2024-12-01 00:12:27 (type: <class 'str'>)
+2025-05-03 16:52:03,095 - nyc_taxi_ingest - INFO - Converted tpep_dropoff_datetime to string format: 2024-12-01 00:31:12 (type: <class 'str'>)
+2025-05-03 16:52:03,096 - nyc_taxi_ingest - INFO - DataFrame datatypes after datetime conversion:
+VendorID                   int32
+tpep_pickup_datetime      object
+tpep_dropoff_datetime     object
+passenger_count          float64
+trip_distance            float64
+RatecodeID               float64
+store_and_fwd_flag        object
+PULocationID               int32
+DOLocationID               int32
+payment_type               int64
+fare_amount              float64
+extra                    float64
+mta_tax                  float64
+tip_amount               float64
+tolls_amount             float64
+improvement_surcharge    float64
+total_amount             float64
+congestion_surcharge     float64
+Airport_fee              float64
+dtype: object
+2025-05-03 16:52:26,590 - nyc_taxi_ingest - INFO - Loaded 3633030 rows for 2024-09 in 364 chunks
+2025-05-03 16:52:26,593 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp0rj10zjj.parquet
+2025-05-03 16:54:29,545 - nyc_taxi_ingest - INFO - Loaded 3646369 rows for 2024-11 in 365 chunks
+2025-05-03 16:54:29,548 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmp9s7vxfuq.parquet
+2025-05-03 16:54:31,406 - nyc_taxi_ingest - INFO - Loaded 3668371 rows for 2024-12 in 367 chunks
+2025-05-03 16:54:31,410 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpnc_ugnkv.parquet
+2025-05-03 16:54:31,840 - nyc_taxi_ingest - INFO - Loaded 3833771 rows for 2024-10 in 384 chunks
+2025-05-03 16:54:31,843 - nyc_taxi_ingest - INFO - Deleted temporary file /var/folders/8x/b7500f291_799m88gc56x3xw0000gn/T/tmpedddrxeg.parquet
+2025-05-03 16:54:31,953 - nyc_taxi_ingest - INFO - Completed ingestion of 41169720 total rows for 2024
+2025-05-03 16:54:32,062 - nyc_taxi_ingest - INFO - Snowflake connection closed
